@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+	<title>Nainesh Patel Toys</title>
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+</head>
+
+
+<body>
+	
+    <div id="horizon2">  
+	<div id="content2">  
+	
+			
+	<ul class="row0">
+	<p>	Pen plotter</p>
+	</ul>
+	
+	<ul class="row1">
+    <p> The design for the pen plotter which was made is essentially done by making an 
+    2D XY platform.   </p>
+    </ul>
+
+	<ul class="row1">
+    <p> The XY platform was made using aluminium extrusions and the linear acctuator 
+    motion comprises of a belt and pinion system that is driven by stepper motors, below 
+    is a drawing of platform that was assembled.   </p>
+    </ul>
+	
+	
+	<ul class="row1">
+		<img class="bodytext" src="penPlotter/f1.png" style="width:80%;" title=""/>		
+	</ul>
+	
+	
+	<ul class="row1">
+    <p> The central plate is given below, the 2 larger holes are where the motors are 
+    mounted on opposite sides, and the rest are for wheels so that the aluminium 
+    extrusion can run freely in both directions.   </p>
+    </ul>
+	
+	<ul class="row1">
+		<img class="bodytext" src="penPlotter/f2.png" style="width:60%;" title=""/>		
+	</ul>
+	
+	<ul class="row1">
+    <p> An Arduino was used for interpreting movement and the motors were driven using 
+    the DRV8825 chip. Details of the pinouts are given below  </p>
+    </ul>
+	
+	
+	<ul class="row1">
+		<img class="bodytext" src="penPlotter/f7.png" style="width:80%;" title=""/>		
+	</ul>
+	
+	
+	<ul class="row1">
+		<img class="bodytext" src="penPlotter/f3a.png" style="width:80%;" title=""/>		
+	</ul>
+	
+	<ul class="row1">
+    <p> GRBL, a well documented motion control software for CNC machines was installed 
+    on the Arduino. GRBL takes G-code (a standardised code format for CNC machines) and 
+    outputs logical motor direction and step pulses to the motor driver. At the higher 
+    level a number of Matlab scripts were written starting by taking an image, detecting 
+    an outline, determining a tool path and the required G-code. The quality 
+    and speed of the image produced is highly dependent of the efficiency of the scripts 
+    that are written, at present the Matlab scripts are a work in progress.      </p>
+    </ul>
+	
+	
+	
+	<br />
+	<br />
+	
+	
+
+	</div>		
+	</div>	
+	
+</body>
+</html>

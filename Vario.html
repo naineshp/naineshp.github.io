@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+	<title>Nainesh Patel Toys</title>
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+</head>
+
+
+<body>
+	
+    <div id="horizon2">  
+	<div id="content2">  
+	
+			
+	<ul class="row0">
+	
+	<p>	Variometer </p>
+	
+	</ul>
+	
+	<ul class="row1">
+    <p> A variometer or vario for short is an inflight instrument that is used aviation, 
+    it informs a pilot of the rate of change of accent and decent. This is particularly 
+    important to paragliding pilots where air conditions change rapidly affecting the 
+    flight behaviour of the glider.    </p>
+	</ul>
+
+	<ul class="row1">
+    <p> Below is a brief documentation on how to build one. The vario is based on an 
+    Arduino, it takes a reading of the atmospheric pressure passes it to the Arduino. 
+    With this information it is possible to calculate the altitude from a given fixed 
+    point and taking 2 readings you can calculate the rate of change in altitude. This 
+    information is then displayed on an LCD screen.    </p>
+	</ul>
+
+
+	<ul class="row1">
+    <p> Parts list:
+    <ol  type="1" >
+         <li> Arduino uno  <br />  </li>
+         <li> SCP1000 Barometric pressure sensor  <br />  </li> 
+         <li> Nokia 3210 LCD screen  <br />  </li> 
+         <li> Joystick  <br />  </li> 
+    </ol
+          
+     
+    </p>
+	</ul>
+	
+	
+	
+	<ul class="row1">
+    <p> Schematic diagram: </p>
+    
+		<img class="bodytext" src="vario/VarioSchematic.jpg" style="width:100%;" title=""/>
+			
+	<ul>
+	
+	
+	
+	<ul class="row1">
+    <p> Code/files: </p>
+
+    <p> <a href="vario/scp1000.cpp" > scp1000.cpp </a>             <br />
+        <a href="vario/scp1000.h" > scp1000.h </a>                 <br />
+        <a href="vario/nokia_3310_lcd.cpp" > nokia_3310_lcd.cpp </a>          <br />
+        <a href="vario/nokia_3310_lcd.h" > nokia_3310_lcd.h </a>          <br />
+        <a href="vario/n3310_lcd.cpp" > n3310_lcd.cpp </a>          <br />
+        <a href="vario/n3310_lcd.h" > n3310_lcd.h</a>          <br />
+        <a href="vario/scale2.h" > scale2.h </a>          <br />
+        <a href="vario/scale3.h" > scale3.h </a>          <br />
+        <a href="vario/pointer.h" > pointer.h </a>          <br />
+        <a href="vario/font_6x8.h" > font_6x8.h </a>          <br />
+        <a href="vario/font_big.h" > font_big.h </a>          <br />
+          <br />
+          Sketch:           <br />
+        
+        <a href="vario/vario_v2_1.txt" >  vario_v2_1.ino </a> <br />
+        <br />
+        </p>
+     	
+	<ul>
+	
+	
+	
+	<ul class="row1">
+    <p> Outcome: </p>
+    
+		<img class="bodytext" src="vario/v1.jpg" style="width:80%;" title=""/>
+			
+	<ul>
+	
+	
+
+	</div>		
+	</div>	
+	
+</body>
+</html>
