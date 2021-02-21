@@ -1,3 +1,3 @@
 A personal website: 
 
-To view go to www.nainesh.co.uk
+To view go to https://naineshp.github.io
