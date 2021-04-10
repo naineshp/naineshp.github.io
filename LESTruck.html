@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+	<title>Nainesh Patel Toys</title>
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+</head>
+
+
+<body>
+	
+    <div id="horizon2">  
+	<div id="content2">  
+	
+			
+	<ul class="row0">
+	
+	<p>	Large-Eddy-Simulations of the airflow around a truck  </p>
+	
+	</ul>
+	
+	<ul class="row1">
+    <p> Research Background:
+With increasing environmental, political and economic pressures on industry to reduce carbon emissions, newly designed vehicles are required to be more fuel-efficient. Understanding the relationship or relationships between the flow structures around a vehicle and its corresponding aerodynamic properties will help mitigate the large drag forces associated with today's heavy goods vehicles. Moreover, a commonly adopted solution to improve efficiency is to reduce the vehicle's weight, which has implications on vehicle stability. Problems that are encountered in strong winds are course deviations, which can lead to accidents, or in extreme cases vehicles have been known to overturn.
+    </p>
+    </ul>
+	
+	
+	
+		<ul class="row1">
+	    <p> Research Aim: 
+	The research program aims to find the relationship or relationships between the topology of the flow structures generated on and around a vehicle, and its associated aerodynamic characteristics with and without crosswinds.
+	    </p>
+	    </ul>
+		
+	
+	<!--	
+	
+		<ul class="row1">
+	    <p> Research Objectives
+
+Carry out an intensive literature review covering
+A critical review of the previous work on truck aerodynamics.
+The effects of atmospheric turbulence on truck aerodynamics.
+Methods suitable for investigating the aerodynamic characteristics of road vehicles, detailing their strengths and weaknesses.
+Theoretical understanding of various CFD methods.
+Implementation of CFD methods into OpenFOAM.
+Process raw data collected in the previous full-scale study
+Analyse the existing full-scale experimental data by reproducing results previously found and extending the analysis to instantaneous features.
+Perform CFD simulations
+Initially carry out a Large-eddy simulation (LES) of a truck travelling in head winds. This will involve deciding what size the domain should be, what boundary conditions should be used, what meshing strategy to adopt, the discretisation and numerical schemes used and what model constants would be appropriate in order to efficiently and effectively resolve the most dominant large scale coherent structures that exist. This will then move onto carrying out LES for a truck subjected to cross winds from various wind yaw angles.
+In addition to the LES some less computationally intensive RANS simulations will be carried out. These simulations offer a benchmark to the numerical models commonly used in industry. Analogously simulations will be carried out for a truck subjected to various cross winds. 
+Validate results
+Validate computational models used by comparing surface pressure and aerodynamic coefficients to data collected in the full-scale experiments, to establish the degree to which the model agrees with the real world observations.
+Compare simulation results to relevant existing literature and existing literature on Ahmed bodies.
+Analyse and Discuss results
+Investigate and analyse the instantaneous and time-averaged flow topology around the truck. Moreover, it is of interest to investigate the underbody flow physics of the vehicle where regions of high turbulent intensity will be identified and the Reynolds stresses will be analysed.
+Document similarities and differences found when a vehicle is subjected to various wind yaw angles.
+Investigate a way to quantify the relationship between coherent structures observed and the aerodynamic properties of the vehicle.
+Critically analyse results detailing strengths and limitations addressing the original problem of a vehicle travelling in the atmospheric boundary layer.
+
+
+	    </p>
+	    </ul>
+		
+		
+		-->
+	
+		<ul class="row1">
+	    <p> Progress to date:
+A Large-Eddy Simulation has been made on a 1:25 scale model truck traveling in headwinds, at a Reynolds number of 200,000 based on the free stream velocity and the height of the vehicle. The subgrid scales have been modeled using a standard Smagorinsky model. To isolate the effect of the mesh resolution on the LES results, two different meshes, coarse and fine have been used they consist of 2.8 million and 11 million cells, respectively. The mesh analysis shows that the results of the fine mesh are deemed to be similar to those of the coarse mesh, with regards to surface pressure and aerodynamic coefficients. The following image shows a comparison between a truck that was used in full-scale experimental testing and a computer generated model.
+	    </p>
+	    </ul>
+	
+	
+	<ul class="row1" style="text-align:center;">
+		<img class="bodytext" src="images/nainesh-web-1.png" style="width:50%;" title="" />		
+	</ul>
+	
+	
+	
+			<ul class="row1">
+		    <p> 
+
+	In addition the LES Simulations have been compared with experimental data for validation and show a reasonable agreement. Further to the LES computations, a RANS k-omega simulation has been carried out this is a turbulence model commonly used in industry as they generate results quickly and are much less computationally intensive. However, as you can see in the following set of graphs the RANS k-omega model fails to pick up the low pressures seen at the front of the vehicle. This is due to the fact that RANS methods struggle to predict airflows in regions of high turbulent activity.
+		    </p>
+		    </ul>
+	
+	<ul class="row1" style="text-align:center;" >
+		<img class="bodytext" src="images/nainesh-web-1a.png" style="width:50%;" title=""/>		
+	</ul>
+	
+	
+	
+			<ul class="row1">
+		    <p> 
+	LES generate large time-dependent datasets. By averaging instantaneous fluid motion time-averaged data can be obtained. The time-averaged vortex structures around the vehicle have been identified and analysed, the flow separates at the leading edges of the container, generating separation bubbles. The following image shows a schematic representation of the dominant time averaged vortex structures it shows regions of high turbulent activity, where large energy losses can be found.
+	
+		    </p>
+		    </ul>
+	
+	
+	
+	<ul class="row1" style="text-align:center;">
+		<img class="bodytext" src="images/nainesh-web-2.png" style="width:50%;" title=""/>		
+	</ul>
+	
+	
+			<ul class="row1">
+		    <p> 
+	By visualising the instantaneous temporal development of vortex structures, coherent structures have been observed propagating along the roof of the truck. The following images show an isosurface for the coefficient of pressure, Cp=-0.1, and an isosurface of the second invariant of the velocity gradient tensor, Q=1200, respectively here structures have been coloured by the velocity of the structure at that point. 
+	
+		    </p>
+		    </ul>
+	
+	
+	
+	<ul class="row1" style="text-align:center;">
+		<img class="bodytext" src="images/nainesh-web-3.png" style="width:50%;" title=""/>		
+	</ul>
+
+	
+	
+			<ul class="row1">
+		    <p> 
+	As these structures continually attach and detach from the surface of the vehicle the aerodynamic properties also change in time. The aerodynamic forces and moments on the truck were computed and using spectral analysis techniques the dominant frequencies of the fluid flow motion around the body were determined. The following image shows the time varying drag coefficient and the power spectral density of the drag coefficient.
+	
+		    </p>
+		    </ul>
+	
+	
+	
+	<ul class="row1" style="text-align:center;">
+		<img class="bodytext" src="images/nainesh-web-4.png" style="width:50%;" title=""/>		
+	</ul>
+	
+	
+	
+			<ul class="row1">
+		    <p> 
+	The details of the work will hopefully help engineers to better understand the problems faced with producing lighter vehicles and will allow them to make better informed design modifications, ultimately improving the efficiency of vehicles.
+	
+		    </p>
+		    </ul>
+	
+	
+	
+		
+	
+
+<ul class="row1">
+    <p> Short video clips of some of the above simulations  
+    </p>
+    </ul>
+
+
+
+		    </p>
+		    </ul>
+<iframe src="https://player.vimeo.com/video/45055644" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </p>
+    </ul>
+
+
+		    </p>
+		    </ul>
+
+<iframe src="https://player.vimeo.com/video/45055643" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </p>
+    </ul>
+
+
+		    </p>
+		    </ul>
+<iframe src="https://player.vimeo.com/video/45055642" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </p>
+    </ul>
+
+
+
+
+
+
+    <ul class="row1">
+    <p> For more information please contact me.   </p>
+    
+    <br/>
+    <br/>
+    </ul>
+
+	
+    
+	
+	
+
+	</div>		
+	</div>	
+	
+</body>
+</html>
